@@ -13,6 +13,10 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    includes/command/draw.hpp \
+    includes/elements/elements.hpp \
+    includes/html/html.hpp \
+    includes/layout/layout.hpp \
     mainwindow.h
 
 FORMS += \
