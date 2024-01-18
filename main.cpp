@@ -117,7 +117,7 @@ public:
 
                 QGraphicsRectItem* rectItem = new QGraphicsRectItem(
                     item->left, item->top - scroll,
-                    item->right - item->left, item->bottom - item->top
+                    item->right - item->left, item->top - item->bottom
                     );
 
                 rectItem->setPen(Qt::NoPen);
@@ -183,9 +183,9 @@ int main(int argc, char* argv[])
 
     QIcon appIcon("/home/alexsander/Downloads/t.jpg");
 
-    QString body =  "<html><body> <h1>Welcome to Athenas Browser! This browser is a peek into the magic of browser internals  in C++  </h1> <p><big>Paragraph 1</big></p> <p><big>Paragraph  2</big></p>  <p><big>Paragraph  3</big></p> "
-                   "<b>Paragraph 4</b>  "
-                   "  </body> </html> ";
+    QString body =  "<html><h2>dsffd  </h2> <body> <h1>Welcome to Athenas Browser! This browser is a peek into the magic of browser internals  in C++  </h1> <p><big>Paragraph 1</big></p> <p><big>Paragraph  2</big></p>  <p><big>Paragraph  3</big></p> "
+                   "<b>Paragraph 4</b>"
+                   "  </body>  </html> ";
 
     Browser browser;
 

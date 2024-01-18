@@ -119,8 +119,7 @@ public:
 
     void recurse(ElementNode* tree) {
 
-            //qDebug() << "[RECURSE]";
-            // open(tree->tag);
+
             if(dynamic_cast<TagNode*>(tree))
             open(static_cast<TagNode*>(tree)->tag);
 
@@ -296,6 +295,7 @@ public:
 
             Layout* previous = nullptr;
             for (auto * child : this->node->children) {
+
                 if(layoutMode(child) == "inline" )
                 {
 
@@ -308,6 +308,7 @@ public:
                 BlockLayout* next = new BlockLayout(child, this, previous);
                 children.append(next);
                 previous = next;
+
                 }
             }
         }
@@ -317,6 +318,7 @@ public:
 
             child->layout();
         }
+
 
         if(mode  == "block")
         {
@@ -460,12 +462,12 @@ public:
             qDebug() << "value " << static_cast<TagNode *>(node)->tag ;
         }
 
-        if (dynamic_cast<TagNode*>(node) && static_cast<TagNode *>(node)->tag == "html")
+        if (dynamic_cast<TagNode*>(node) && static_cast<TagNode *>(node)->tag == "body")
         {
             qDebug()<< "dafkljadsfds" << height;
             int x2 = x + width;
             int y2 = y + height;
-            DrawRect* rect = new DrawRect(x, y, x2, y2, QColor("green"));
+            DrawRect* rect = new DrawRect(x, y, x2, y2, QColor("blue"));
             cmds.append(rect);
         }
 

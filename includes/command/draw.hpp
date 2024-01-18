@@ -8,8 +8,6 @@
 #include <QDebug>
 #include <algorithm>
 
-
-
 #pragma once
 
 const int WIDTH = 800;
