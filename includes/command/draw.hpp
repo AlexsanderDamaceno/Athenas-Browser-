@@ -16,8 +16,6 @@ const int HSTEP = 13;
 const int VSTEP = 18;
 const int SCROLL_STEP = 100;
 
-
-
 struct DisplayItem
 
 {
